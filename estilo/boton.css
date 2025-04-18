@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+/* fondo */
+.fondo{
+background:url("../imagen/fondos3.png");
+
+background-attachment: fixed;
+	
+}
+/********fondo2*****/
+.fondo2{
+background:url(../imagen/fondo2.jpg);
+	background-attachment: fixed;
+}
+
+/********fondo3*****/
+.fondo3{
+background:url("../imagen2/fondodiseño.png");
+	background-attachment: fixed;
+		
+	
+	}
+/**************interlineado*******/
+.textoo{
+	line-height:35px;
+		
+}
+
+
+/********HIPER*****/
+
+.canal{
+font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+font-size: 30px;
+color: #FFFFFF;	
+box-shadow: 5px 5px 5px #F10D11;
+background:#E91216;
+	margin: 20px;
+	padding: 5px;
+}
+.canal:hover {
+	
+	box-shadow: 0px 2px 0px #000;
+	background:#AF8A1C;	
+	color:#FFFFFF;
+}
+.canal:active {
+	
+	box-shadow: 0px 2px 0px #000;
+	background: #D8C128;
+	background:silver;
+	
+}
+
+
+
+
+
+
+
+
+/********titulo de diseño*****/
+
+.titulo{
+font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+font-size: 92px;
+font-style: italic;
+	color: #D89425;
+	font-style: oblique;
+
+}
+
+
+ /* encabezado */
+.boton {
+	font-size: 15px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-decoration: none;
+	display: inline-block;
+	background:linear-gradient(RED);
+	color:#F5EEEE;
+	padding: 10px 20px;
+	box-shadow: 0px 5px 0px #F10D11;
+	text-align:center;
+	
+}
+
+.boton:hover {
+	
+	box-shadow: 0px 2px 0px #000;
+	background:#29ABE1;
+	
+	color:#B1070A;
+}
+.boton:active {
+	
+	box-shadow: 0px 2px 0px #000;
+	background: #D8C128;
+	background:silver;
+	
+}
+
+ /* logo */
+.logo:hover {
+	width:120px; 
+	height:120px; 
+	
+}
+/***********************video*****************/
+
+video {
+
+width:90%;
+}
+
+ 
+/****************************************/
+
+
+/* cursos */
+
+.compu {
+	width: 150px;	
+	height: 150px;
+	}
+.compu:hover {
+	width: 200px;	
+	height: 200px;
+	}
+/******compu 2**************/
+
+.compu2 {
+	width: 180px;	
+	height: 330px;
+	}
+
+
+/***** tabla ******/
+.tabla{
+background:url("../imagen/fondos3.png");
+
+background-attachment: fixed;
+}
+
+/***** tabla1 ******/
+.tabla1{
+background:url("../imagen/fondo4.png");
+
+background-attachment: fixed;
+}
+
+/*****texto de los cursos de sistema*******/
+
+.texto {
+	color:goldenrod;
+	font-family:Lucida Bright;
+	font-style:italic;
+	font-size: 50px;
+	
+}
+
+
+
+
+
+/******************************************/
+
+/* texto descarga */
+
+.color {
+	font-style: italic ;
+	
+	font-size: 21px;
+	color:#AC7919;
+	font:bold;
+	text-decoration:none;
+	
+}
+
+
+/************************************************/
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+/**{
+	padding: 0px;
+	margin: 0px;
+}
+*/
+.content{
+	width: 100%;
+	height: 100%;
+}
+
+.slider{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-position: center center;
+	background-image: url("../imagen/fondo.jpg");
+	z-index: -1;
+}
+
+.slider li{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-position: center center;
+    animation: slider 10s linear infinite;
+    -moz-animation: slider 10s linear infinite;
+    -ms-animation: slider 10s linear infinite;
+    -o-animation: slider 10s linear infinite;
+    -webkit-animation: slider 10s linear infinite;
+    top: 10px;
+    left: -1px;
+	
+}
+
+.slider .img{
+	background-image: url("../imagen/fondo.jpg");
+	animation-delay: 5s;
+}
+.slider .img2{
+	background-image:url("../imagen/fondo.jpg");
+	animation-delay: 10s;
+}
+
+
+/*.slider .img3{
+	background-image: url("../imagen/fondo4.png");
+	animation-delay: 15s;
+}
+*/
+@keyframes slider{
+	0%{opacity: 0; animation-timing-function:ease-in; }
+	10%{opacity: 1; animation-timing-function: ease-out;}
+	25%{opacity: 1; transform: scale(1);}
+	50%{opacity: 0; transform:scale(2);}
+	100%{opacity: 0;}
+	
+}
+
+@-moz-keyframes slider{
+	0%{opacity: 0; animation-timing-function:ease-in; }
+	10%{opacity: 1; animation-timing-function: ease-out;}
+	25%{opacity: 1; transform: scale(1);}
+	50%{opacity: 0; transform:scale(2);}
+	100%{opacity: 0;}
+}
+
+@-ms-keyframes slider{
+	0%{opacity: 0; animation-timing-function:ease-in; }
+	10%{opacity: 1; animation-timing-function: ease-out;}
+	25%{opacity: 1; transform: scale(1);}
+	50%{opacity: 0; transform:scale(2);}
+	100%{opacity: 0;}
+}
+
+@-o-keyframes slider{
+	0%{opacity: 0; animation-timing-function:ease-in; }
+	10%{opacity: 1; animation-timing-function: ease-out;}
+	25%{opacity: 1; transform: scale(1);}
+	50%{opacity: 0; transform:scale(2);}
+	100%{opacity: 0;}
+	
+}
+
+@-webkit-keyframes slider{
+	0%{opacity: 0; animation-timing-function:ease-in; }
+	10%{opacity: 1; animation-timing-function: ease-out;}
+	25%{opacity: 1; transform: scale(1);}
+	50%{opacity: 0; transform:scale(2);}
+	100%{opacity: 0;}
+	
+}
+
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sofia;
+}
+*/
+nav{
+	max-width: 10000px;
+	
+	background-color:#156E9A;
+	font-size: 18px;
+	margin-top: 0px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	font-family:"Lucida Bright";
+	font-style: italic;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color:#0D4B6A;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+}
+
+.right{
+	position:absolute;
+}
+
+
+
+
+
+
